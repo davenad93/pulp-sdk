@@ -1851,7 +1851,7 @@ rnnext = [
 ]
 
 pulp_nn = IsaSubset('pulpnn', pulp_nn_insns + pulp_v2_insns + pulp_common_insns)
-pulp_v2 = IsaSubset('pulpv2', pulp_v2_insns + pulp_common_insns)
+pulp_v2 = IsaSubset('pulpv2', pulp_nn_insns + pulp_v2_insns + pulp_common_insns)
 pulp_v2_rnnext = IsaSubset('rnnext', rnnext)
 
 
