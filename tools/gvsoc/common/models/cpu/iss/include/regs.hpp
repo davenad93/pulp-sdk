@@ -96,6 +96,8 @@ static inline iss_reg_t iss_get_spec_purp_reg(iss_t *iss, int spreg)
 {
   if ((spreg >= 0) && (spreg < 6))
     return iss->cpu.pulp_nn.spr_ml[spreg];
+  else
+    return 0;
 }
 
 #endif

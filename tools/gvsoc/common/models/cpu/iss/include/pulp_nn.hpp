@@ -596,6 +596,8 @@ static inline iss_insn_t *qnt_step(iss_t *iss, iss_insn_t *insn, iss_reg_t input
       iss_exec_insn_stall(iss);
     }
   }
+  /* FIXME: Avoid compiling error */
+  return insn;
 
 }
 
